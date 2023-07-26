@@ -1,0 +1,164 @@
+
+    body {
+      background-color: #F5F7FA;
+      margin: 0;
+      padding: 0;
+      
+    }
+    
+    header {
+      background-color: #5279F4;
+      color: #fff;
+      padding: 40px;
+      text-align: center;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+    
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-align:left;
+      font-family: Garamond;
+    }
+    
+    p {
+      font-size: 18px;
+      margin-bottom: 40px;
+      text-align:left;
+      font-family: Montserrat, sans-serif;
+    }
+    .section-title{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .cta-button {
+    
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 88%;
+    transition: background-color 0.3s ease;
+  }
+  .cta-button:hover {
+    background-color: #007bff;
+    color: #f1f1f1;
+  }
+    
+  .hero {
+    display: flex;
+    padding: 60px;
+  }
+  
+  .hero-content {
+    flex: 1;
+  }
+  
+  .hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+  
+  .hero-image img {
+    width: 350px;
+    border-radius: 4px;
+  }
+    
+    .features {
+      color: #333;
+      padding: 40px;
+    }
+    
+    .feature {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    
+    .feature-image {
+      flex: 0 0 auto;
+      width: 20%;
+      margin-right: 20px;
+    }
+    
+    .feature-content {
+      flex: 1 1 auto;
+    }
+  footer {
+  background-color: #5279F4;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.how-it-works .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step1,.step3{
+  margin-top:20px;
+}
+.step2{
+  margin-top:25px;
+}
+
+.navbar {
+  background-color: #2565AE;
+  color: #FFFFFF;
+  font-family: Montserrat, sans-serif;
+  letter-spacing: 4px;
+}
+.navbar-brand {
+  font-size: 24px;
+}
+.navbar-nav .nav-link {
+  color: #FFFFFF;
+  font-size: 16px;
+  padding: 8px 16px;
+}
+.navbar-nav .nav-link:hover {
+  color: #D5F3FE;
+}
+
+.faq{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-top: 20px;
+}

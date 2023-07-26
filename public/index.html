@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+
+    <title>Store Crime Details</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+    <body>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">BlockchainDB</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li ><a href="main.html">Home</a></li>
+            <li class="active"><a href="#">Add</a></li>
+            <li><a href="search.html">Search</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="main.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <h1>Add Crime Record</h1>
+        <form id="add-user-form">
+          <div class="form-group">
+            <label for="case-number">Case Number:</label>
+            <input type="text" id="case-number" name="case-number" class="form-control" required />
+          </div>
+    
+          <div class="form-group">
+            <label for="Crime">Crime:</label>
+            <input type="text" id="crime" name="crime" class="form-control" required />
+          </div>
+    
+          <div class="form-group">
+            <label for="Suspect">Suspect:</label>
+            <input type="text" id="suspect" name="suspect" class="form-control" required />
+          </div>
+    
+          <div class="form-group">
+            <label for="Victim">Victim:</label>
+            <input type="text" id="victim" name="victim" class="form-control" required />
+          </div>
+    
+          <div class="form-group">
+            <label for="witness">Witness:</label>
+            <input type="text" id="witness" name="witness" class="form-control" />
+          </div>
+    
+          <div class="form-group">
+            <label for="dateofcrime">Date of Crime:</label>
+            <input type="date" id="dateofcrime" name="dateofcrime" class="form-control" />
+          </div>
+    
+          <div class="form-group">
+            <label for="Location">Location:</label>
+            <input type="text" id="location" name="location" class="form-control" required />
+          </div>
+    
+          <div class="form-group">
+            <label for="Officer">Officer:</label>
+            <input type="text" id="officer" name="officer" class="form-control" required />
+          </div>
+    
+          <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" class="form-control" required></textarea>
+          </div>
+    
+          <div class="form-group">
+            <label for="investigation-status">Investigation Status:</label>
+            <select id="investigation-status" name="investigation-status" class="form-control" required>
+              <option value="Open">Open</option>
+              <option value="Closed">Closed</option>
+              <option value="Under Investigation">Under Investigation</option>
+            </select>
+          </div>
+    
+          <div class="form-group">
+            <label for="file">File:</label>
+            <input type="file" id="file" name="file" accept=".txt, .pdf, .doc" class="form-control-file" />
+          </div>
+    
+          <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    
+      <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+          <h2>Confirmation</h2>
+          <p>Are you sure you want to add this record?</p>
+          <div class="modal-buttons">
+            <button id="confirm-yes">Yes</button>
+            <button id="confirm-no">No</button>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/ipfs-http-client/dist/index.min.js" defer></script>
+    
+    <script src="app.js" defer></script>
+
+  </body>
+</html>

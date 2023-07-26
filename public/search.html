@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Search Criminal Record</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar navbar-inverse ">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">BlockchainDB</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li ><a href="main.html">Home</a></li>
+            <li ><a href="index.html">Add</a></li></li>
+            <li class="active"><a href="search.html">Search</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://localhost:3000/"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+  <h1>Search Criminal Record</h1>
+  <div class="container">
+  <form id="search-form">
+    <label for="crime">Crime:</label>
+    <input type="text" id="crime" name="crime">
+    <button type="submit" id="submit">Search</button>
+  </form>
+  </div>
+
+  <div id="search-result"></div>
+  <div id="pagination" class="pagination-container"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/ipfs-http-client/dist/index.min.js" defer></script>
+    
+  <script src="app.js" defer></script>
+<style>
+.fa, .far, .fas {
+  font-family: "Font Awesome 5 Free";
+  color: #002D62;
+  font-size: 12px;
+}</style>
+</body>
+</html>
+
